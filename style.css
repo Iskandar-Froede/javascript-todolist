@@ -1,1 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Luckiest+Guy&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  color: white;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.nav h2 {
+  font-size: 2rem;
+}
+
+.user-input {
+  margin-top: 2px;
+  width: 350px;
+  text-align: center;
+}
+
+.user-input input {
+  width: 80%;
+  outline: none;
+  padding: 8px;
+  border: 1px solid lightgrey;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.user-input button {
+  cursor: pointer;
+  padding: 8px;
+  width: fit-content;
+  transition: 1s;
+  outline: none;
+  background-color: lightgray;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.user-input button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.todo-items {
+  width: 500px;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.item:hover {
+  box-shadow: 0 0 20px palevioletred;
+  border: 1px solid palevioletred;
+}
+
+.item i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media(max-width:768px) {
+  .nav {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav h2 {
+    margin: 10px 0;
+  }
+
+  .user-input {
+    width: 100px;
+  }
+
+  .to-do-items {
+    width: 100px;
+  }
+}
+
+@media(max-width:480px) {
+  .user-input input {
+    width: 74%;
+  }
+}
+
+@media(max-width:320px) {
+  .user-input input {
+    width: 60%;
+  }
+}
